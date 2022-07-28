@@ -127,18 +127,6 @@ body {
   margin-left: auto;
 }
 
-.nav-tel,
-.nav-mail {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  text-decoration: none;
-  color: var(--text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
 .nav-item + .nav-item {
   margin-left: 50px;
 }
@@ -149,6 +137,30 @@ body {
   padding-bottom: 32px;
   color: var(--title-color);
   text-decoration: none;
+}
+
+.nav-tel,
+.nav-mail {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+}
+
+.mail-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.tel-icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .nav-contacts-item + .nav-contacts-item {
@@ -231,6 +243,10 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+}
+
+.feature-icon {
+  margin-bottom: 30px;
 }
 
 .feature-list {
@@ -328,7 +344,6 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  /*background-color: teal;*/
   color: #afb1b8;
 }
 
@@ -360,6 +375,11 @@ body {
   gap: 10px;
 }
 
+.clients-list {
+  display: flex;
+  gap: 30px;
+}
+
 .clients {
   margin-bottom: 50px;
   color: var(--title-color);
@@ -368,6 +388,31 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.client-icon {
+  fill: currentColor;
+}
+
+.client-link:hover,
+.client-link:focus {
+  color: var(--active-hover-focus-current);
+  border-color: var(--active-hover-focus-current);
+}
+
+.footer {
+  background-color: var(--background-footer-hero);
 }
 
 .logo-foot {
@@ -433,14 +478,13 @@ body {
   text-decoration: none;
 }
 
-.footer {
+.f-container {
   display: flex;
-  margin-right: auto;
+  width: 1200px;
   gap: 70px;
-  background-color: var(--background-footer-hero);
-}
-
-.foot-container {
+  align-items: baseline;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -490,7 +534,13 @@ body {
 }
 
 .project-link {
+  display: block;
   text-decoration: none;
+}
+
+.project-link:hover,
+.project-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-item {
