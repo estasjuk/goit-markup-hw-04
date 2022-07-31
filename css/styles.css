@@ -187,7 +187,8 @@ body {
 }
 
 .hero {
-  max-width: 1600px;
+  margin: 0 auto;
+  width: 1600px;
   height: 600px;
   background-color: var(--background-footer-hero);
   text-align: center;
@@ -256,6 +257,11 @@ body {
 
 .feature-item {
   flex-basis: calc((100% - 90px) / 4);
+}
+
+.feature-icon-img {
+  display: flex;
+  justify-content: center;
 }
 
 .features-text {
@@ -396,6 +402,7 @@ body {
   align-items: center;
   width: 170px;
   height: 92px;
+  outline: transparent;
   color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -494,7 +501,6 @@ body {
   justify-content: center;
   gap: 10px;
 }
-
 .footer-social-link {
   display: flex;
   justify-content: center;
@@ -521,10 +527,6 @@ body {
   justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
-}
-
-.container-portfolio {
-  margin-bottom: 34px;
 }
 
 .project {
